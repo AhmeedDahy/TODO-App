@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>TODO App</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>TODO App</h1>
+      </header>
+      <section class="add-task">
+        <input
+          type="text"
+          id="text"
+          placeholder="Add a new task..."
+          minlength="3"
+          required
+        />
+        <button id="add" aria-label="Add Task">&plus;</button>
+      </section>
+      <section class="tasks">
+        <div class="tasks-to-do">
+          <h2>Tasks to Do - <span class="count-todo">0</span></h2>
+          <ul class="list-to-do"></ul>
+        </div>
+        <div class="tasks-done">
+          <h2>Done - <span class="count-done">0</span></h2>
+          <ul class="list-done"></ul>
+        </div>
+      </section>
+      <footer>
+        <button class="delete-all" aria-label="Delete All Tasks">
+          Delete All
+        </button>
+      </footer>
+    </div>
+    <script src="main.js"></script>
+    <script
+      src="https://kit.fontawesome.com/57cdfe6923.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
